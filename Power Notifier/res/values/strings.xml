@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="add_new">Add new</string>
+    <string name="app_name">Power Notifier</string>
+    <string name="email">E-mail</string>
+    <string name="email_address">E-mail address</string>
+    <string name="email_send">Send e-mail notifications</string>
+    <string name="email_sendto">E-mail recipients</string>
+    <string name="email_recvs">E-mail receivers</string>
+    <string name="global_prefs">Global preferences</string>
+    <string name="password_not_set">Password not set</string>
+    <string name="password_set">Password set</string>
+    <string name="show_icon">Status area icon</string>
+    <string name="show_icon_sum">Show icon on the notification area when running</string>
+    <string name="sms">SMS</string>
+    <string name="sms_send">Send SMS notificatrions</string>
+    <string name="sms_sendto">SMS recipients</string>
+    <string name="smtp_config">E-mail server configuration</string>
+    <string name="smtp_host">SMTP host</string>
+	<string name="smtp_pass">Password</string>
+    <string name="smtp_port">SMTP port</string>
+    <string name="smtp_user">Username</string>
+    <string name="delete">Delete</string>
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<preference-headers
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <header 
+        android:id="@+id/global_prefs"
+        android:fragment="org.barrabash.powernotifier.settings.GeneralFragment"
+	 	android:title="@string/global_prefs" />
+    
+    <header 
+        android:id="@+id/email_notify_settings"
+        android:fragment="org.barrabash.powernotifier.settings.EmailFragment"
+	 	android:title="@string/email_send" />
+    
+    <header 
+        android:id="@+id/sms_notify_settings"
+        android:fragment="org.barrabash.powernotifier.settings.SMSFragment"
+	 	android:title="@string/sms_send" />
+</preference-headers>
