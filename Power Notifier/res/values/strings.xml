@@ -2,6 +2,7 @@
 <resources>
     <string name="add_new">Add new</string>
     <string name="app_name">Power Notifier</string>
+    <string name="edit">Edit</string>
     <string name="email">E-mail</string>
     <string name="email_address">E-mail address</string>
     <string name="email_send">Send e-mail notifications</string>
