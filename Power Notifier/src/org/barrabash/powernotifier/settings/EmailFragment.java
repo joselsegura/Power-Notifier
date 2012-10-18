@@ -25,7 +25,7 @@ import android.widget.AdapterView.AdapterContextMenuInfo;
 import android.widget.CompoundButton;
 
 public class EmailFragment extends SwitchedFragment
-	implements NewContactDialog.NewContactDialogListener{
+	implements AddContactDialog.AddContactDialogListener{
 	
 	private static final String TAG = "EmailFragment";
 	private static final int MENU_ID_ADD_ADDRESS = Menu.FIRST;
@@ -117,7 +117,7 @@ public class EmailFragment extends SwitchedFragment
 	    Log.d(TAG, "Creating the context");
 	    
 	    MenuInflater inflater = getActivity().getMenuInflater();
-	    inflater.inflate(R.menu.email_context_menu, menu);
+	    inflater.inflate(R.menu.list_context_menu, menu);
 	}
 
 	@Override
@@ -128,7 +128,9 @@ public class EmailFragment extends SwitchedFragment
 				getDefaultSharedPreferences(getActivity());
 			
 			if(sharedPrefs.getBoolean("send_email", false)) {
-				NewContactDialog d = new NewContactDialog(this);
+				AddContactDialog d = new AddContactDialog(this,
+						AddContactDialog.TYPE_EMAIL);
+				
 				d.show(getActivity().getFragmentManager(), "AddEmailDialog");
 			}
 			
@@ -192,7 +194,8 @@ public class EmailFragment extends SwitchedFragment
 		buttonView.invalidate();
 	}
 
-	public void onDialogPositiveClick(DialogFragment dialog, String input_value) {
+	public void onDialogPositiveClick(DialogFragment dialog,
+			String input_value) {
 		Log.wtf(TAG, "I'm not kidding, I will launch the missiles now! " + input_value);
 
 		SharedPreferences sharedPrefs = PreferenceManager

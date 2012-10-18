@@ -22,4 +22,5 @@
     <string name="smtp_port">SMTP port</string>
     <string name="smtp_user">Username</string>
     <string name="delete">Delete</string>
+    <string name="sms_phone">Phone number</string>
 </resources>
