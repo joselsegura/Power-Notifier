@@ -23,4 +23,7 @@
     <string name="smtp_user">Username</string>
     <string name="delete">Delete</string>
     <string name="sms_phone">Phone number</string>
+    <string name="toast_pref">Show popup notifications when sending notifications</string>
+    <string name="toast_sum">Show a popuo notification each time a notification is sent</string>
+    <string name="sent">Power Notifier: Notifications sent</string>
 </resources>

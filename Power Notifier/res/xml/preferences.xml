@@ -3,7 +3,7 @@
         xmlns:android="http://schemas.android.com/apk/res/android">
 
     <SwitchPreference android:title="@string/show_icon" android:key="show_icon" android:enabled="true" android:summary="@string/show_icon_sum" android:defaultValue="false"/>
-    <SwitchPreference android:key="send_email" android:title="@string/email_send"/>
+    <SwitchPreference android:summary="@string/toast_sum" android:key="show_toast" android:title="@string/toast_pref"/><SwitchPreference android:key="send_email" android:title="@string/email_send"/>
     <SwitchPreference android:key="send_sms" android:title="@string/sms_send"/>
     <PreferenceCategory android:title="@string/smtp_config">
         <EditTextPreference android:title="@string/smtp_user" android:key="smtp_user"/>
@@ -12,5 +12,6 @@
         <EditTextPreference android:title="@string/smtp_host" android:key="smtp_host"/>
         <EditTextPreference android:title="@string/smtp_port" android:key="smtp_port"/>
     </PreferenceCategory>
+    
 
 </PreferenceScreen>
